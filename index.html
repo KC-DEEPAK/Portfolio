@@ -1,13 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak K C - Portfolio</title>
+    <meta name="description" content="Portfolio of Deepak K C, Software Engineer and Developer.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="nav-content new-nav">
+            <a href="#" class="logo-new">
+                <div class="logo-icon"><i data-lucide="mountain" size="20"></i></div>
+                Portfolio
+            </a>
+            <nav class="nav-links-center">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-pill-primary">Get in Touch</a>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero new-hero">
+            <div class="hero-content-center">
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span>
+                    AVAILABLE FOR INTERNSHIPS 2025
+                </div>
+                
+                <h1 class="hero-title">
+                    Engineering Student<br>
+                    <span class="text-gradient">Building Tomorrow</span>
+                </h1>
+                
+                <h2 class="hero-subtitle">
+                    3rd Year <span class="divider">|</span> Software Development <span class="divider">|</span> AI Enthusiast
+                </h2>
+                
+                <p class="hero-bio">
+                    Passionate about creating innovative solutions through code. Currently exploring the<br>fascinating world of Machine Learning and Web Development while pursuing my<br>engineering degree.
+                </p>
+                
+                <div class="hero-cta-buttons">
+                    <a href="#projects" class="btn btn-pill-primary">View My Work <i data-lucide="arrow-right" size="18"></i></a>
+                    <a href="#contact" class="btn btn-pill-outline">Contact Me <i data-lucide="mail" size="18"></i></a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <p>SCROLL TO EXPLORE</p>
+                    <div class="mouse-icon"><i data-lucide="mouse" size="24"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-heading">
+                <h2><span class="number">01.</span> About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-left">
+                    <div class="image-wrapper-new">
+                        <img src="profile.jpg" alt="Deepak K C" class="profile-pic-new">
+                        <div class="floating-github-card">
+                            <div class="icon-circle"><i data-lucide="github" size="20"></i></div>
+                            <div class="github-text">
+                                <strong>GitHub</strong>
+                                <span>@KC-DEEPAK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-right">
+                    <p class="about-overline">A passionate Engineering Student</p>
+                    <p>Currently in my 3rd year of engineering, I'm deeply passionate about technology and its potential to solve real-world problems. My journey in software development began with curiosity and has evolved into a dedicated pursuit of excellence.</p>
+                    <p>I specialize in <span class="highlight-cyan">Machine Learning</span> and <span class="highlight-cyan">Web Development</span>, constantly learning and adapting to new technologies. I believe in writing clean, efficient code and creating user-centric solutions.</p>
+                    
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <div class="edu-icon"><i data-lucide="graduation-cap" size="20"></i></div>
+                            <h4>Education</h4>
+                        </div>
+                        <strong>Bachelor of Engineering</strong>
+                        <p>Computer Science & Engineering</p>
+                        <span class="edu-date">Expected Graduation: 2026</span>
+                    </div>
+
+                    <h4 class="skills-heading">Technical Skills</h4>
+                    <div class="tech-skills-pills">
+                        <span class="skill-pill"><i data-lucide="code" size="14"></i> C</span>
+                        <span class="skill-pill"><i data-lucide="coffee" size="14"></i> Java</span>
+                        <span class="skill-pill"><i data-lucide="terminal" size="14"></i> Python</span>
+                        <span class="skill-pill"><i data-lucide="cpu" size="14"></i> Machine Learning</span>
+                        <span class="skill-pill"><i data-lucide="globe" size="14"></i> Web Development</span>
+                        <span class="skill-pill"><i data-lucide="code-2" size="14"></i> React</span>
+                        <span class="skill-pill"><i data-lucide="server" size="14"></i> Node.js</span>
+                        <span class="skill-pill"><i data-lucide="git-branch" size="14"></i> Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-heading">
+                <h2><span class="number">02.</span> Projects</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Python</div>
+                        <div class="folder-icon"><i data-lucide="folder" size="32"></i></div>
+                        <div class="project-image-placeholder rainfall-bg"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Rainfall Prediction System</h3>
+                        <p class="project-description">A machine learning-based system that predicts rainfall patterns using historical weather data. Implements multiple ML algorithms including...</p>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Scikit-learn</li>
+                        </ul>
+                        <div class="project-links single-button">
+                            <a href="https://github.com/KC-DEEPAK/Rainfall_Prediction_System" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Python</div>
+                        <div class="folder-icon"><i data-lucide="folder" size="32"></i></div>
+                        <div class="project-image-placeholder dark-bg"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student Performance Predictor</h3>
+                        <p class="project-description">An AI-powered application that analyzes student data to predict academic performance. Helps educators identify at-risk students early and...</p>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Machine Learning</li>
+                            <li>Flask</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="INSERT_YOUR_GITHUB_LINK_HERE" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
+                            <a href="INSERT_YOUR_LIVE_LINK_HERE" aria-label="External Link" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" size="18"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">React</div>
+                        <div class="folder-icon"><i data-lucide="folder" size="32"></i></div>
+                        <div class="project-image-placeholder dark-bg"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Dashboard</h3>
+                        <p class="project-description">A responsive admin dashboard for managing online store operations. Features real-time analytics, inventory management, and order...</p>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Chart.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="INSERT_YOUR_GITHUB_LINK_HERE" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
+                            <a href="INSERT_YOUR_LIVE_LINK_HERE" aria-label="External Link" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" size="18"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <p class="contact-subheading">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+            <div class="contact-container">
+                <div class="contact-info-left">
+                    <h2 class="contact-main-title">Let's work together</h2>
+                    <p class="contact-desc">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-item">
+                            <div class="contact-icon-box email-bg">
+                                <i data-lucide="mail" size="20"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <strong>Email</strong>
+                                <span>student@email.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box location-bg">
+                                <i data-lucide="map-pin" size="20"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <strong>Location</strong>
+                                <span>Available for Remote/Hybrid</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box availability-bg">
+                                <i data-lucide="clock" size="20"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <strong>Availability</strong>
+                                <span>Open for Internships & Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="follow-me-section">
+                        <h4>Follow Me</h4>
+                        <div class="social-pills">
+                            <a href="#" class="social-pill-box" aria-label="GitHub"><i data-lucide="github" size="20"></i></a>
+                            <a href="#" class="social-pill-box" aria-label="LinkedIn"><i data-lucide="linkedin" size="20"></i></a>
+                            <a href="#" class="social-pill-box" aria-label="Twitter"><i data-lucide="twitter" size="20"></i></a>
+                            <a href="#" class="social-pill-box" aria-label="Instagram"><i data-lucide="instagram" size="20"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-right">
+                    <div class="contact-card">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                                <span class="char-limit">Max 500 characters</span>
+                            </div>
+                            <button type="submit" class="btn btn-submit-gradient">
+                                Send Message <i data-lucide="send" size="18"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        </div>
+        <p>Built with <i data-lucide="heart" size="14"></i> by Deepak K C</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

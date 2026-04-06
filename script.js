@@ -1,5 +1,7 @@
-// Initialize Lucide Icons
-lucide.createIcons();
+// Initialize Lucide Icons on DOM Content Loaded
+document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+});
 
 // Sticky Navbar effect on scroll
 const navbar = document.querySelector('.navbar');

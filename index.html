@@ -16,8 +16,21 @@
     <header class="navbar">
         <div class="nav-content new-nav">
             <a href="#" class="logo-new">
-                <div class="logo-icon"><i data-lucide="mountain" size="20"></i></div>
-                Portfolio
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" class="premium-logo">
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#007bff;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Hexagon Background -->
+                        <path d="M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z" fill="none" stroke="url(#logo-gradient)" stroke-width="4" />
+                        <!-- Stylized 'D' / Terminal Logo -->
+                        <path d="M35 30 L65 50 L35 70 M60 70 L75 70" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                Deepak K C
             </a>
             <nav class="nav-links-center">
                 <a href="#hero" class="active">Home</a>
@@ -74,13 +87,17 @@
                 <div class="about-image-left">
                     <div class="image-wrapper-new">
                         <img src="profile.jpg" alt="Deepak K C" class="profile-pic-new">
-                        <div class="floating-github-card">
-                            <div class="icon-circle"><i data-lucide="github" size="20"></i></div>
+                        <a href="https://github.com/KC-DEEPAK" class="floating-github-card" target="_blank" rel="noopener noreferrer">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.112-.303-.54-1.523.116-3.176 0 0 .84-.269 2.75 1.026.8-.223 1.653-.335 2.504-.34.851.005 1.705.117 2.504.34 1.91-1.295 2.75-1.026 2.75-1.026.658 1.653.23 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </div>
                             <div class="github-text">
                                 <strong>GitHub</strong>
                                 <span>@KC-DEEPAK</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="about-text-right">
@@ -95,7 +112,7 @@
                         </div>
                         <strong>Bachelor of Engineering</strong>
                         <p>Computer Science & Engineering</p>
-                        <span class="edu-date">Expected Graduation: 2026</span>
+                        <span class="edu-date">Expected Graduation: 2027</span>
                     </div>
 
                     <h4 class="skills-heading">Technical Skills</h4>
@@ -124,7 +141,7 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-badge">Python</div>
-                        <div class="folder-icon"><i data-lucide="folder" size="32"></i></div>
+                        <div class="project-card-logo"><i data-lucide="cloud-rain" size="32"></i></div>
                         <div class="project-image-placeholder rainfall-bg"></div>
                     </div>
                     <div class="project-content">
@@ -145,21 +162,21 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-badge">Python</div>
-                        <div class="folder-icon"><i data-lucide="folder" size="32"></i></div>
-                        <div class="project-image-placeholder dark-bg"></div>
+                        <div class="project-card-logo"><i data-lucide="trending-up" size="32"></i></div>
+                        <div class="project-image-placeholder price-bg"></div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Student Performance Predictor</h3>
-                        <p class="project-description">An AI-powered application that analyzes student data to predict academic performance. Helps educators identify at-risk students early and...</p>
+                        <h3 class="project-title">Smart Price Analyzer</h3>
+                        <p class="project-description">A sophisticated machine learning tool that analyzes market trends and historical data to provide intelligent price predictions and cost-saving insights. Features automated web scraping and real-time tracking.</p>
                         <ul class="project-tech-list">
                             <li>Python</li>
-                            <li>Machine Learning</li>
-                            <li>Flask</li>
-                            <li>PostgreSQL</li>
+                            <li>Web Scraping</li>
+                            <li>ML</li>
+                            <li>Pandas</li>
                         </ul>
                         <div class="project-links">
-                            <a href="INSERT_YOUR_GITHUB_LINK_HERE" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
-                            <a href="INSERT_YOUR_LIVE_LINK_HERE" aria-label="External Link" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" size="18"></i> Demo</a>
+                            <a href="https://github.com/KC-DEEPAK/SMART-PRICE-ANALYSIS" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
+                            <a href="#" aria-label="External Link" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" size="18"></i> Demo</a>
                         </div>
                     </div>
                 </div>
@@ -167,22 +184,22 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="project-badge">React</div>
-                        <div class="folder-icon"><i data-lucide="folder" size="32"></i></div>
-                        <div class="project-image-placeholder dark-bg"></div>
+                        <div class="project-badge">Python</div>
+                        <div class="project-card-logo"><i data-lucide="sprout" size="32"></i></div>
+                        <div class="project-image-placeholder farming-bg"></div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Dashboard</h3>
-                        <p class="project-description">A responsive admin dashboard for managing online store operations. Features real-time analytics, inventory management, and order...</p>
+                        <h3 class="project-title">AI-Farming-Assistant</h3>
+                        <p class="project-description">An intelligent agricultural companion that leverages machine learning and real-time sensor data to optimize crop yield and health. Providing data-driven farming insights.</p>
                         <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>TypeScript</li>
-                            <li>Tailwind CSS</li>
-                            <li>Chart.js</li>
+                            <li>Python</li>
+                            <li>Scikit-learn</li>
+                            <li>IoT</li>
+                            <li>Machine Learning</li>
                         </ul>
                         <div class="project-links">
-                            <a href="INSERT_YOUR_GITHUB_LINK_HERE" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
-                            <a href="INSERT_YOUR_LIVE_LINK_HERE" aria-label="External Link" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" size="18"></i> Demo</a>
+                            <a href="https://github.com/KC-DEEPAK/AI-Farming-Assistant" aria-label="GitHub Link" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i data-lucide="github" size="18"></i> Code</a>
+                            <a href="#" aria-label="External Link" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" size="18"></i> Demo</a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +222,7 @@
                             </div>
                             <div class="contact-item-text">
                                 <strong>Email</strong>
-                                <span>student@email.com</span>
+                                <span>deepakkcdeepu77@gmail.com</span>
                             </div>
                         </div>
 
@@ -215,17 +232,17 @@
                             </div>
                             <div class="contact-item-text">
                                 <strong>Location</strong>
-                                <span>Available for Remote/Hybrid</span>
+                                <span>Chikkamagaluru(D)(T), Kyathannabeedu(V)</span>
                             </div>
                         </div>
 
                         <div class="contact-item">
                             <div class="contact-icon-box availability-bg">
-                                <i data-lucide="clock" size="20"></i>
+                                <i data-lucide="phone" size="20"></i>
                             </div>
                             <div class="contact-item-text">
-                                <strong>Availability</strong>
-                                <span>Open for Internships & Projects</span>
+                                <strong>Phone</strong>
+                                <span>7019647443</span>
                             </div>
                         </div>
                     </div>
@@ -233,10 +250,26 @@
                     <div class="follow-me-section">
                         <h4>Follow Me</h4>
                         <div class="social-pills">
-                            <a href="#" class="social-pill-box" aria-label="GitHub"><i data-lucide="github" size="20"></i></a>
-                            <a href="#" class="social-pill-box" aria-label="LinkedIn"><i data-lucide="linkedin" size="20"></i></a>
-                            <a href="#" class="social-pill-box" aria-label="Twitter"><i data-lucide="twitter" size="20"></i></a>
-                            <a href="#" class="social-pill-box" aria-label="Instagram"><i data-lucide="instagram" size="20"></i></a>
+                            <a href="https://github.com/KC-DEEPAK" class="social-pill-box" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.112-.303-.54-1.523.116-3.176 0 0 .84-.269 2.75 1.026.8-.223 1.653-.335 2.504-.34.851.005 1.705.117 2.504.34 1.91-1.295 2.75-1.026 2.75-1.026.658 1.653.23 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/deepak-k-c-595a9b350/" class="social-pill-box" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@Deepak-p5l4d" class="social-pill-box" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:deepakkcdeepu77@gmail.com" class="social-pill-box" aria-label="Email">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.573l8.073-6.08c1.618-1.214 3.927-.059 3.927 1.964z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -268,10 +301,22 @@
     </main>
 
     <footer>
-        <div class="social-links">
-            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        <div class="social-links" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 10px;">
+            <a href="https://github.com/KC-DEEPAK" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.112-.303-.54-1.523.116-3.176 0 0 .84-.269 2.75 1.026.8-.223 1.653-.335 2.504-.34.851.005 1.705.117 2.504.34 1.91-1.295 2.75-1.026 2.75-1.026.658 1.653.23 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/deepak-k-c-595a9b350/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@Deepak-p5l4d" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
         </div>
         <p>Built with <i data-lucide="heart" size="14"></i> by Deepak K C</p>
     </footer>

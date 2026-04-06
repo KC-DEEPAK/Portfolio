@@ -166,14 +166,21 @@ section {
 }
 
 .logo-icon {
-    width: 36px;
-    height: 36px;
-    background-color: #fff;
-    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    background-color: var(--bg-light);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--bg-color);
+    padding: 6px;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+}
+
+.premium-logo {
+    width: 100%;
+    height: 100%;
 }
 
 .nav-links-center {
@@ -413,17 +420,32 @@ section {
     gap: 15px;
     box-shadow: 0 20px 40px -10px rgba(0,0,0,0.8);
     border: 1px solid rgba(255,255,255,0.08);
+    text-decoration: none;
+    transition: var(--transition);
+    z-index: 5;
+}
+
+.floating-github-card:hover {
+    transform: translate(-5px, -5px) scale(1.03);
+    background-color: var(--bg-lighter);
+    border-color: rgba(0, 229, 255, 0.3);
 }
 
 .icon-circle {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background-color: rgba(0, 229, 255, 0.15);
-    color: var(--accent);
+    color: #fff;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: var(--transition);
+}
+
+.floating-github-card:hover .icon-circle {
+    background-color: var(--accent);
+    transform: rotate(5deg);
 }
 
 .github-text {
@@ -596,7 +618,7 @@ section {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.folder-icon {
+.project-card-logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -614,8 +636,10 @@ section {
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
 }
 
-.project-card:hover .folder-icon {
+.project-card:hover .project-card-logo {
     transform: translate(-50%, -50%) scale(1.1);
+    background-color: var(--accent);
+    color: #fff;
 }
 
 .project-card:hover .project-title {
@@ -639,7 +663,17 @@ section {
     opacity: 0.8;
 }
 
-.project-card:hover .rainfall-bg {
+.project-image-placeholder.price-bg {
+    background-image: url('smart_price_bg.png');
+    opacity: 0.8;
+}
+
+.project-image-placeholder.farming-bg {
+    background-image: url('farming_assistant_bg.png');
+    opacity: 0.8;
+}
+
+.project-card:hover .project-image-placeholder {
     opacity: 1;
 }
 
@@ -812,6 +846,11 @@ section {
     color: #fff;
     transform: translateY(-3px);
 }
+
+.social-pill-box[aria-label="GitHub"]:hover { background-color: #333; }
+.social-pill-box[aria-label="LinkedIn"]:hover { background-color: #0077b5; }
+.social-pill-box[aria-label="YouTube"]:hover { background-color: #ff0000; }
+.social-pill-box[aria-label="Email"]:hover { background-color: #ea4335; }
 
 /* Contact Form */
 .contact-card {
